@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_put_gift"
+        android:icon="@drawable/ic_money_off"
+        android:title="随礼" />
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/ic_bottom_home"
+        android:title="主页" />
+    <item
+        android:id="@+id/item_get_gift"
+        android:icon="@drawable/ic_get_money"
+        android:title="收礼" />
+
+</menu>

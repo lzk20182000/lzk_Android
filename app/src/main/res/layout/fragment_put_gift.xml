@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PutGiftFragment">
+
+    <LinearLayout
+        android:id="@+id/linearview_putgift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="#C8009688">
+
+            <ImageView
+                android:id="@+id/imageView_add_put_gift"
+                android:layout_width="50dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="133dp"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/ic_add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,UnknownId" />
+
+            <TextView
+                android:id="@+id/title_put_gift"
+                android:layout_width="413dp"
+                android:layout_height="90dp"
+                android:ellipsize="marquee"
+                android:gravity="center_horizontal|center"
+                android:text="随礼"
+                android:textColor="#ffffffff"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <ImageView
+                android:id="@+id/imageView_sou_put_gift"
+                android:layout_width="50dp"
+                android:layout_height="39dp"
+                android:src="@drawable/ic_top_search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/title_put_gift"
+                app:layout_constraintHorizontal_bias="0.947"
+                app:layout_constraintStart_toEndOf="@+id/imageView_add_put_gift"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#666"
+            android:text="                                当前随礼记录" />
+
+        <ListView
+            android:id="@+id/listview_putgift"
+            android:layout_width="match_parent"
+            android:layout_height="457dp" />
+    </LinearLayout>
+
+</FrameLayout>
